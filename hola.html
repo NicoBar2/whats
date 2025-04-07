@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Feliz inicio de clases!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #e0f7fa);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #d63384;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-out;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: #555;
+      margin-bottom: 1rem;
+      max-width: 600px;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .flowers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      animation: float 6s infinite ease-in-out;
+      margin-top: 1.5rem;
+    }
+
+    .flower {
+      font-size: 2.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .flower:hover {
+      transform: scale(1.3) rotate(10deg);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1.2rem; }
+      .flower { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 ¡Feliz inicio de clases! 🌸</h1>
+  <p>Hoy comienza una nueva etapa y estoy seguro de que te irá increíble.</p>
+  <p>Tal vez no pude verte hoy, pero quería desearte lo mejor con todo mi corazón.</p>
+  <p>¡Disfruta este nuevo comienzo, aprende mucho y nunca dejes de sonreír!</p>
+  <p>Espero verte pronto y perdon por este detalle tan pequeño</p>
+  <div class="flowers">
+    <span class="flower">🌼</span>
+    <span class="flower">🌸</span>
+    <span class="flower">🌻</span>
+    <span class="flower">🌷</span>
+    <span class="flower">🌺</span>
+    <span class="flower">🌹</span>
+    <span class="flower">🪻</span>
+    <span class="flower">🪷</span>
+  </div>
+</body>
+</html>
